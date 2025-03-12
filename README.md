@@ -12,10 +12,9 @@
 
 <p align="center">
   <a href="#-overview">Overview</a> •
+   <a href="#-team">Team</a> •
   <a href="#-features">Features</a> •
   <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-team">Team</a> •
   <a href="#-getting-started">Getting Started</a>
 </p>
 
@@ -45,23 +44,7 @@
 - **AI Processing**: Natural Language Processing for document summarization
 - **Deployment**: Django-based hosting solutions
 
-## 🏗 Architecture
 
-```mermaid
-graph TD
-    A[Client App] -->|API Requests| B[Backend Server]
-    B --> C[Authentication Service]
-    B --> D[Room Management]
-    B --> E[PDF Processing]
-    B --> F[Quiz Generator]
-    C -->|Read/Write| G[(Database)]
-    D -->|Read/Write| G
-    E -->|Read/Write| G
-    F -->|Read/Write| G
-    E -->|Process PDFs| H[AI Engine]
-    H -->|Generate Summaries| E
-    H -->|Generate Questions| F
-```
 
 
 
@@ -72,7 +55,7 @@ graph TD
 git clone https://github.com/username/brain-bloom.git
 
 # Navigate to project directory
-cd brain-bloom
+cd myproject
 
 # Install dependencies
 pip install -r requirements.txt
